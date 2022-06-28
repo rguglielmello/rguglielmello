@@ -2,9 +2,9 @@
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Microsoft.eShopWeb;
-using Microsoft.eShopWeb.ApplicationCore.Constants;
-using Microsoft.eShopWeb.PublicApi.AuthEndpoints;
+using Microsoft.bigPotatoWeb;
+using Microsoft.bigPotatoWeb.ApplicationCore.Constants;
+using Microsoft.bigPotatoWeb.PublicApi.AuthEndpoints;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace PublicApiIntegrationTests.AuthEndpoints

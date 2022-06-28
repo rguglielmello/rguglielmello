@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.Infrastructure.Services;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Services;
 
 // This class is used by the application to send email for account confirmation and password reset.
 // For more details see https://go.microsoft.com/fwlink/?LinkID=532713

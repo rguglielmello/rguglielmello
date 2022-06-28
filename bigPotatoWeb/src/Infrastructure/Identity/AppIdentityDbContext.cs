@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Microsoft.eShopWeb.Infrastructure.Identity;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Identity;
 
 public class AppIdentityDbContext : IdentityDbContext<ApplicationUser>
 {

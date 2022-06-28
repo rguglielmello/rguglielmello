@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Interfaces;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
 public interface IBasketService
 {

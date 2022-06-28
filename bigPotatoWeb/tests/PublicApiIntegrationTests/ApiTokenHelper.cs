@@ -1,4 +1,4 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Constants;
+﻿using Microsoft.bigPotatoWeb.ApplicationCore.Constants;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;

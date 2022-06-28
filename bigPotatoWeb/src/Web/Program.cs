@@ -8,20 +8,20 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
-using Microsoft.eShopWeb;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Identity;
-using Microsoft.eShopWeb.Web;
-using Microsoft.eShopWeb.Web.Configuration;
-using Microsoft.eShopWeb.Web.HealthChecks;
+using Microsoft.bigPotatoWeb;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.Infrastructure.Data;
+using Microsoft.bigPotatoWeb.Infrastructure.Identity;
+using Microsoft.bigPotatoWeb.Web;
+using Microsoft.bigPotatoWeb.Web.Configuration;
+using Microsoft.bigPotatoWeb.Web.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Logging.AddConsole();
 
-Microsoft.eShopWeb.Infrastructure.Dependencies.ConfigureServices(builder.Configuration, builder.Services);
+Microsoft.bigPotatoWeb.Infrastructure.Dependencies.ConfigureServices(builder.Configuration, builder.Services);
 
 builder.Services.AddCookieSettings();
 

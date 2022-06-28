@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Microsoft.eShopWeb.FunctionalTests</RootNamespace>
+    <RootNamespace>Microsoft.bigPotatoWeb.FunctionalTests</RootNamespace>
     <IsPackable>false</IsPackable>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>

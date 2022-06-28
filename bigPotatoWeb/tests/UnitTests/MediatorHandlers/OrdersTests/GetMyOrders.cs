@@ -2,13 +2,13 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Web.Features.MyOrders;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.Web.Features.MyOrders;
 using Moq;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.MediatorHandlers.OrdersTests;
+namespace Microsoft.bigPotatoWeb.UnitTests.MediatorHandlers.OrdersTests;
 
 public class GetMyOrders
 {
@@ -27,7 +27,7 @@ public class GetMyOrders
     [Fact]
     public async Task NotReturnNullIfOrdersArePresIent()
     {
-        var request = new eShopWeb.Web.Features.MyOrders.GetMyOrders("SomeUserName");
+        var request = new bigPotatoWeb.Web.Features.MyOrders.GetMyOrders("SomeUserName");
 
         var handler = new GetMyOrdersHandler(_mockOrderRepository.Object);
 

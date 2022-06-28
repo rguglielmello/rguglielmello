@@ -1,7 +1,7 @@
 ﻿using Ardalis.Specification.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Data;
 
 public class EfRepository<T> : RepositoryBase<T>, IReadRepository<T>, IRepository<T> where T : class, IAggregateRoot
 {

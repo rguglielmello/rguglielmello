@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Specifications;
 using Moq;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications;
+namespace Microsoft.bigPotatoWeb.UnitTests.ApplicationCore.Specifications;
 
 public class BasketWithItems
 {

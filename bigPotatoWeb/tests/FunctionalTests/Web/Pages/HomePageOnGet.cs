@@ -1,9 +1,9 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.eShopWeb.FunctionalTests.Web;
+using Microsoft.bigPotatoWeb.FunctionalTests.Web;
 using Xunit;
 
-namespace Microsoft.eShopWeb.FunctionalTests.WebRazorPages;
+namespace Microsoft.bigPotatoWeb.FunctionalTests.WebRazorPages;
 
 [Collection("Sequential")]
 public class HomePageOnGet : IClassFixture<TestApplication>

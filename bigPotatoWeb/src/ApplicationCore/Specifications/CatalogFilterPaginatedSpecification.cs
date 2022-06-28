@@ -1,7 +1,7 @@
 ﻿using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Specifications;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Specifications;
 
 public class CatalogFilterPaginatedSpecification : Specification<CatalogItem>
 {

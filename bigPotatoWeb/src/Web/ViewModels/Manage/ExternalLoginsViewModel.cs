@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace Microsoft.eShopWeb.Web.ViewModels.Manage;
+namespace Microsoft.bigPotatoWeb.Web.ViewModels.Manage;
 
 public class ExternalLoginsViewModel
 {

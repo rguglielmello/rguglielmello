@@ -8,15 +8,15 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.eShopWeb;
-using Microsoft.eShopWeb.ApplicationCore.Constants;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Services;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Identity;
-using Microsoft.eShopWeb.Infrastructure.Logging;
-using Microsoft.eShopWeb.PublicApi;
-using Microsoft.eShopWeb.PublicApi.Middleware;
+using Microsoft.bigPotatoWeb;
+using Microsoft.bigPotatoWeb.ApplicationCore.Constants;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Services;
+using Microsoft.bigPotatoWeb.Infrastructure.Data;
+using Microsoft.bigPotatoWeb.Infrastructure.Identity;
+using Microsoft.bigPotatoWeb.Infrastructure.Logging;
+using Microsoft.bigPotatoWeb.PublicApi;
+using Microsoft.bigPotatoWeb.PublicApi.Middleware;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -34,7 +34,7 @@ builder.Services.AddEndpoints();
 builder.Configuration.AddConfigurationFile("appsettings.test.json");
 builder.Logging.AddConsole();
 
-Microsoft.eShopWeb.Infrastructure.Dependencies.ConfigureServices(builder.Configuration, builder.Services);
+Microsoft.bigPotatoWeb.Infrastructure.Dependencies.ConfigureServices(builder.Configuration, builder.Services);
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
         .AddEntityFrameworkStores<AppIdentityDbContext>()

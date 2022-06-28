@@ -1,8 +1,7 @@
 ﻿using System.Text.Encodings.Web;
-using System.Threading.Tasks;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.Web.Services;
+namespace Microsoft.bigPotatoWeb.Web.Services;
 
 public static class EmailSenderExtensions
 {

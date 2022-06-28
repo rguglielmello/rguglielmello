@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 using Ardalis.ApiEndpoints;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Infrastructure.Identity;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.Infrastructure.Identity;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Microsoft.eShopWeb.PublicApi.AuthEndpoints;
+namespace Microsoft.bigPotatoWeb.PublicApi.AuthEndpoints;
 
 /// <summary>
 /// Authenticates a user

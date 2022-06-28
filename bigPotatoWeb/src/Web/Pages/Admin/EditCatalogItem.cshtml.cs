@@ -1,12 +1,10 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.eShopWeb.ApplicationCore.Constants;
-using Microsoft.eShopWeb.Web.Interfaces;
-using Microsoft.eShopWeb.Web.ViewModels;
+using Microsoft.bigPotatoWeb.Web.Interfaces;
+using Microsoft.bigPotatoWeb.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Pages.Admin;
+namespace Microsoft.bigPotatoWeb.Web.Pages.Admin;
 
 [Authorize(Roles = BlazorShared.Authorization.Constants.Roles.ADMINISTRATORS)]
 public class EditCatalogItemModel : PageModel

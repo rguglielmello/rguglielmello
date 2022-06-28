@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Services;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.UnitTests.Builders;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Services;
+using Microsoft.bigPotatoWeb.Infrastructure.Data;
+using Microsoft.bigPotatoWeb.UnitTests.Builders;
 using Xunit;
 
-namespace Microsoft.eShopWeb.IntegrationTests.Repositories.BasketRepositoryTests;
+namespace Microsoft.bigPotatoWeb.IntegrationTests.Repositories.BasketRepositoryTests;
 
 public class SetQuantities
 {

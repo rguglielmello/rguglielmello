@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data.Config;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Data.Config;
 
 public class OrderItemConfiguration : IEntityTypeConfiguration<OrderItem>
 {

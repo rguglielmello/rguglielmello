@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Interfaces;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
 public interface IOrderService
 {

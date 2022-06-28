@@ -1,10 +1,10 @@
 ﻿using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Data;
 
 public class CatalogContext : DbContext
 {

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Microsoft.eShopWeb.Infrastructure.Data;
+using Microsoft.bigPotatoWeb.Infrastructure.Data;
 
 #nullable disable
 
-namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
+namespace Microsoft.bigPotatoWeb.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(CatalogContext))]
     [Migration("20211231093753_FixShipToAddress")]
@@ -33,7 +33,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
             modelBuilder.HasSequence("catalog_type_hilo")
                 .IncrementsBy(10);
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate.Basket", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate.Basket", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -51,7 +51,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("Baskets");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate.BasketItem", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate.BasketItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -78,7 +78,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("BasketItems");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogBrand", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.CatalogBrand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -96,7 +96,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("CatalogBrands");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogItem", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.CatalogItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -133,7 +133,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("Catalog", (string)null);
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogType", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.CatalogType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -151,7 +151,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("CatalogTypes");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Order", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -172,7 +172,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.OrderItem", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate.OrderItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -196,24 +196,24 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate.BasketItem", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate.BasketItem", b =>
                 {
-                    b.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate.Basket", null)
+                    b.HasOne("Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate.Basket", null)
                         .WithMany("Items")
                         .HasForeignKey("BasketId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogItem", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.CatalogItem", b =>
                 {
-                    b.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogBrand", "CatalogBrand")
+                    b.HasOne("Microsoft.bigPotatoWeb.ApplicationCore.Entities.CatalogBrand", "CatalogBrand")
                         .WithMany()
                         .HasForeignKey("CatalogBrandId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogType", "CatalogType")
+                    b.HasOne("Microsoft.bigPotatoWeb.ApplicationCore.Entities.CatalogType", "CatalogType")
                         .WithMany()
                         .HasForeignKey("CatalogTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -224,9 +224,9 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.Navigation("CatalogType");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Order", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate.Order", b =>
                 {
-                    b.OwnsOne("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Address", "ShipToAddress", b1 =>
+                    b.OwnsOne("Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate.Address", "ShipToAddress", b1 =>
                         {
                             b1.Property<int>("OrderId")
                                 .HasColumnType("int");
@@ -267,13 +267,13 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.OrderItem", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate.OrderItem", b =>
                 {
-                    b.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Order", null)
+                    b.HasOne("Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate.Order", null)
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderId");
 
-                    b.OwnsOne("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.CatalogItemOrdered", "ItemOrdered", b1 =>
+                    b.OwnsOne("Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate.CatalogItemOrdered", "ItemOrdered", b1 =>
                         {
                             b1.Property<int>("OrderItemId")
                                 .HasColumnType("int");
@@ -300,12 +300,12 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.Navigation("ItemOrdered");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate.Basket", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate.Basket", b =>
                 {
                     b.Navigation("Items");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Order", b =>
+            modelBuilder.Entity("Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate.Order", b =>
                 {
                     b.Navigation("OrderItems");
                 });

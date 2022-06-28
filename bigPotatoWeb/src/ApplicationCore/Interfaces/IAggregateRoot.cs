@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.ApplicationCore.Interfaces;
+﻿namespace Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
 public interface IAggregateRoot
 { }

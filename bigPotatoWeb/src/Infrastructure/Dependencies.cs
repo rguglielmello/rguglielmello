@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Identity;
+using Microsoft.bigPotatoWeb.Infrastructure.Data;
+using Microsoft.bigPotatoWeb.Infrastructure.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.eShopWeb.Infrastructure;
+namespace Microsoft.bigPotatoWeb.Infrastructure;
 
 public static class Dependencies
 {

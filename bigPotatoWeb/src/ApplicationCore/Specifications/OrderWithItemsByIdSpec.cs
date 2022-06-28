@@ -1,7 +1,7 @@
 ﻿using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Specifications;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Specifications;
 
 public class OrderWithItemsByIdSpec : Specification<Order>, ISingleResultSpecification
 {

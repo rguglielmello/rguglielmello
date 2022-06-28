@@ -2,12 +2,12 @@
 //using System.Text;
 //using System.Text.Json;
 //using System.Threading.Tasks;
-//using Microsoft.eShopWeb.ApplicationCore.Constants;
-//using Microsoft.eShopWeb.FunctionalTests.PublicApi;
-//using Microsoft.eShopWeb.PublicApi.AuthEndpoints;
+//using Microsoft.bigPotatoWeb.ApplicationCore.Constants;
+//using Microsoft.bigPotatoWeb.FunctionalTests.PublicApi;
+//using Microsoft.bigPotatoWeb.PublicApi.AuthEndpoints;
 //using Xunit;
 
-//namespace Microsoft.eShopWeb.FunctionalTests.Web.Controllers;
+//namespace Microsoft.bigPotatoWeb.FunctionalTests.Web.Controllers;
 
 //[Collection("Sequential")]
 //public class AuthenticateEndpoint : IClassFixture<TestApiApplication>

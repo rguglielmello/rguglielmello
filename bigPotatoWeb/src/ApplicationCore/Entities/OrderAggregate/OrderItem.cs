@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+﻿namespace Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
 
 public class OrderItem : BaseEntity
 {

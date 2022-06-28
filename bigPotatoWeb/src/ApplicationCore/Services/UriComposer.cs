@@ -1,6 +1,6 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+﻿using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Services;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Services;
 
 public class UriComposer : IUriComposer
 {

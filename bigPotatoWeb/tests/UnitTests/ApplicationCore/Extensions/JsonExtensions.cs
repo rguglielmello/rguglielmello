@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Extensions;
+namespace Microsoft.bigPotatoWeb.UnitTests.ApplicationCore.Extensions;
 
 public class JsonExtensions
 {

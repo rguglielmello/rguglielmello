@@ -1,7 +1,7 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+﻿using Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate;
 using Moq;
 
-namespace Microsoft.eShopWeb.UnitTests.Builders;
+namespace Microsoft.bigPotatoWeb.UnitTests.Builders;
 
 public class BasketBuilder
 {

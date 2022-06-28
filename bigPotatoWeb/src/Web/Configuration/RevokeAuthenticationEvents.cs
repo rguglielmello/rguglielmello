@@ -1,12 +1,9 @@
-﻿using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Logging;
 
-namespace Microsoft.eShopWeb.Web.Configuration;
+namespace Microsoft.bigPotatoWeb.Web.Configuration;
 
 //TODO : replace IMemoryCache with a distributed cache if you are in multi-host scenario
 public class RevokeAuthenticationEvents : CookieAuthenticationEvents

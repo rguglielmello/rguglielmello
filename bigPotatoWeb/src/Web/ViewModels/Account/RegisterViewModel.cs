@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Microsoft.eShopWeb.Web.ViewModels.Account;
+namespace Microsoft.bigPotatoWeb.Web.ViewModels.Account;
 
 public class RegisterViewModel
 {

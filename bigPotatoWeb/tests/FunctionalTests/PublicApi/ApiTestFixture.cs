@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Identity;
-using Microsoft.eShopWeb.PublicApi.AuthEndpoints;
+using Microsoft.bigPotatoWeb.Infrastructure.Data;
+using Microsoft.bigPotatoWeb.Infrastructure.Identity;
+using Microsoft.bigPotatoWeb.PublicApi.AuthEndpoints;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Microsoft.eShopWeb.FunctionalTests.PublicApi;
+namespace Microsoft.bigPotatoWeb.FunctionalTests.PublicApi;
 
 public class TestApiApplication : WebApplicationFactory<AuthenticateEndpoint>
 {

@@ -2,14 +2,14 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
-using Microsoft.eShopWeb.Web.Features.OrderDetails;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Specifications;
+using Microsoft.bigPotatoWeb.Web.Features.OrderDetails;
 using Moq;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.MediatorHandlers.OrdersTests;
+namespace Microsoft.bigPotatoWeb.UnitTests.MediatorHandlers.OrdersTests;
 
 public class GetOrderDetails
 {
@@ -29,7 +29,7 @@ public class GetOrderDetails
     [Fact]
     public async Task NotBeNullIfOrderExists()
     {
-        var request = new eShopWeb.Web.Features.OrderDetails.GetOrderDetails("SomeUserName", 0);
+        var request = new bigPotatoWeb.Web.Features.OrderDetails.GetOrderDetails("SomeUserName", 0);
 
         var handler = new GetOrderDetailsHandler(_mockOrderRepository.Object);
 

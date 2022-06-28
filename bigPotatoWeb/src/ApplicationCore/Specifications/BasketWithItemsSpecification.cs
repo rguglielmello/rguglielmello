@@ -1,7 +1,7 @@
 ﻿using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Specifications;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Specifications;
 
 public sealed class BasketWithItemsSpecification : Specification<Basket>, ISingleResultSpecification
 {

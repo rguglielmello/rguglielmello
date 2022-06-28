@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Interfaces;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
 /// <summary>
 /// Specific query used to fetch count without running in memory

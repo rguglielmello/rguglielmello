@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications;
+namespace Microsoft.bigPotatoWeb.UnitTests.ApplicationCore.Specifications;
 
 public class CatalogFilterPaginatedSpecification
 {
     [Fact]
     public void ReturnsAllCatalogItems()
     {
-        var spec = new eShopWeb.ApplicationCore.Specifications.CatalogFilterPaginatedSpecification(0, 10, null, null);
+        var spec = new bigPotatoWeb.ApplicationCore.Specifications.CatalogFilterPaginatedSpecification(0, 10, null, null);
 
         var result = GetTestCollection()
             .AsQueryable()
@@ -23,7 +23,7 @@ public class CatalogFilterPaginatedSpecification
     [Fact]
     public void Returns2CatalogItemsWithSameBrandAndTypeId()
     {
-        var spec = new eShopWeb.ApplicationCore.Specifications.CatalogFilterPaginatedSpecification(0, 10, 1, 1);
+        var spec = new bigPotatoWeb.ApplicationCore.Specifications.CatalogFilterPaginatedSpecification(0, 10, 1, 1);
 
         var result = GetTestCollection()
             .AsQueryable()

@@ -5,11 +5,11 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.eShopWeb.ApplicationCore.Constants;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Constants;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Microsoft.eShopWeb.Infrastructure.Identity;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Identity;
 
 public class IdentityTokenClaimService : ITokenClaimsService
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
+namespace Microsoft.bigPotatoWeb.PublicApi.CatalogItemEndpoints;
 
 public class GetByIdCatalogItemResponse : BaseResponse
 {

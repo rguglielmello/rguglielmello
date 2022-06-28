@@ -1,5 +1,5 @@
 ﻿using BlazorShared.Models;
-using Microsoft.eShopWeb;
+using Microsoft.bigPotatoWeb;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Net;
 using System.Net.Http.Headers;

@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.Web.ViewModels.File;
+﻿namespace Microsoft.bigPotatoWeb.Web.ViewModels.File;
 
 public class FileViewModel
 {

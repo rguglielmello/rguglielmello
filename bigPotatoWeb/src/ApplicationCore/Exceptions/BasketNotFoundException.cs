@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Exceptions;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Exceptions;
 
 public class BasketNotFoundException : Exception
 {

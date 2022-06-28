@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data.Queries;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Data.Queries;
 
 public class BasketQueryService : IBasketQueryService
 {

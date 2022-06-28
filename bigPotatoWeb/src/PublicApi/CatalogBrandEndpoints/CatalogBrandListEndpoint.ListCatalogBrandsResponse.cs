@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Microsoft.eShopWeb.PublicApi.CatalogBrandEndpoints;
+namespace Microsoft.bigPotatoWeb.PublicApi.CatalogBrandEndpoints;
 
 public class ListCatalogBrandsResponse : BaseResponse
 {

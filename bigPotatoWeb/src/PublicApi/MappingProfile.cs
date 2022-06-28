@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.PublicApi.CatalogBrandEndpoints;
-using Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
-using Microsoft.eShopWeb.PublicApi.CatalogTypeEndpoints;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities;
+using Microsoft.bigPotatoWeb.PublicApi.CatalogBrandEndpoints;
+using Microsoft.bigPotatoWeb.PublicApi.CatalogItemEndpoints;
+using Microsoft.bigPotatoWeb.PublicApi.CatalogTypeEndpoints;
 
-namespace Microsoft.eShopWeb.PublicApi;
+namespace Microsoft.bigPotatoWeb.PublicApi;
 
 public class MappingProfile : Profile
 {

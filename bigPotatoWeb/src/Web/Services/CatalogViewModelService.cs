@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
-using Microsoft.eShopWeb.Web.ViewModels;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Specifications;
+using Microsoft.bigPotatoWeb.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Services;
+namespace Microsoft.bigPotatoWeb.Web.Services;
 
 /// <summary>
 /// This is a UI-specific service so belongs in UI project. It does not contain any business logic and works

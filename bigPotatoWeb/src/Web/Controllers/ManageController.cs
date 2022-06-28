@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Infrastructure.Identity;
-using Microsoft.eShopWeb.Web.Services;
-using Microsoft.eShopWeb.Web.ViewModels.Manage;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.Infrastructure.Identity;
+using Microsoft.bigPotatoWeb.Web.Services;
+using Microsoft.bigPotatoWeb.Web.ViewModels.Manage;
 
-namespace Microsoft.eShopWeb.Web.Controllers;
+namespace Microsoft.bigPotatoWeb.Web.Controllers;
 
 [ApiExplorerSettings(IgnoreApi = true)]
 [Authorize] // Controllers that mainly require Authorization still use Controller/View; other pages use Pages

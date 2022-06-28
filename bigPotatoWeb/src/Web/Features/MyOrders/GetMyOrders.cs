@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using MediatR;
-using Microsoft.eShopWeb.Web.ViewModels;
+﻿using MediatR;
+using Microsoft.bigPotatoWeb.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Features.MyOrders;
+namespace Microsoft.bigPotatoWeb.Web.Features.MyOrders;
 
 public class GetMyOrders : IRequest<IEnumerable<OrderViewModel>>
 {

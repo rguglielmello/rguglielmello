@@ -1,8 +1,8 @@
 ﻿using System;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Entities.CatalogItemTests;
+namespace Microsoft.bigPotatoWeb.UnitTests.ApplicationCore.Entities.CatalogItemTests;
 
 public class UpdateDetails
 {

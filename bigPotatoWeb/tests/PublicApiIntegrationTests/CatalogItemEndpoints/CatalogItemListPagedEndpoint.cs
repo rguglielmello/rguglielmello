@@ -1,6 +1,6 @@
-﻿using Microsoft.eShopWeb;
-using Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
-using Microsoft.eShopWeb.Web.ViewModels;
+﻿using Microsoft.bigPotatoWeb;
+using Microsoft.bigPotatoWeb.PublicApi.CatalogItemEndpoints;
+using Microsoft.bigPotatoWeb.Web.ViewModels;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 using System.Threading.Tasks;

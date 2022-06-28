@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Microsoft.eShopWeb.FunctionalTests.Web;
+namespace Microsoft.bigPotatoWeb.FunctionalTests.Web;
 
 public static class WebPageHelpers
 {

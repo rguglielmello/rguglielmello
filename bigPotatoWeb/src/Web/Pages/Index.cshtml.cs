@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.eShopWeb.Web.Services;
-using Microsoft.eShopWeb.Web.ViewModels;
+using Microsoft.bigPotatoWeb.Web.Services;
+using Microsoft.bigPotatoWeb.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Pages;
+namespace Microsoft.bigPotatoWeb.Web.Pages;
 
 public class IndexModel : PageModel
 {

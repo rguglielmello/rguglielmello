@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.eShopWeb.ApplicationCore.Constants;
+using Microsoft.bigPotatoWeb.ApplicationCore.Constants;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Microsoft.eShopWeb.FunctionalTests.Web.Api;
+namespace Microsoft.bigPotatoWeb.FunctionalTests.Web.Api;
 
 public class ApiTokenHelper
 {

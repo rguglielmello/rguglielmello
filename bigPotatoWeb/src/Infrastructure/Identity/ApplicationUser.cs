@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Microsoft.eShopWeb.Infrastructure.Identity;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Identity;
 
 public class ApplicationUser : IdentityUser
 {

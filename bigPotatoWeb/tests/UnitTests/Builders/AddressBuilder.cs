@@ -1,6 +1,6 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+﻿using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.UnitTests.Builders;
+namespace Microsoft.bigPotatoWeb.UnitTests.Builders;
 
 public class AddressBuilder
 {

@@ -1,13 +1,11 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Services;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Data.Queries;
-using Microsoft.eShopWeb.Infrastructure.Logging;
-using Microsoft.eShopWeb.Infrastructure.Services;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Services;
+using Microsoft.bigPotatoWeb.Infrastructure.Data;
+using Microsoft.bigPotatoWeb.Infrastructure.Data.Queries;
+using Microsoft.bigPotatoWeb.Infrastructure.Logging;
+using Microsoft.bigPotatoWeb.Infrastructure.Services;
 
-namespace Microsoft.eShopWeb.Web.Configuration;
+namespace Microsoft.bigPotatoWeb.Web.Configuration;
 
 public static class ConfigureCoreServices
 {

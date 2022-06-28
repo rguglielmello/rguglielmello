@@ -2,13 +2,13 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Exceptions;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Infrastructure.Identity;
-using Microsoft.eShopWeb.Web.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Exceptions;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.Infrastructure.Identity;
+using Microsoft.bigPotatoWeb.Web.Interfaces;
 
-namespace Microsoft.eShopWeb.Web.Pages.Basket;
+namespace Microsoft.bigPotatoWeb.Web.Pages.Basket;
 
 [Authorize]
 public class CheckoutModel : PageModel

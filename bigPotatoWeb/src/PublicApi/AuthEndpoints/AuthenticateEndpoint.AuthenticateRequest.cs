@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.PublicApi.AuthEndpoints;
+﻿namespace Microsoft.bigPotatoWeb.PublicApi.AuthEndpoints;
 
 public class AuthenticateRequest : BaseRequest
 {

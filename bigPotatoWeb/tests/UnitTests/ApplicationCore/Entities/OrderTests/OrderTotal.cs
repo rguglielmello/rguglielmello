@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using Microsoft.eShopWeb.UnitTests.Builders;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.bigPotatoWeb.UnitTests.Builders;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Entities.OrderTests;
+namespace Microsoft.bigPotatoWeb.UnitTests.ApplicationCore.Entities.OrderTests;
 
 public class OrderTotal
 {

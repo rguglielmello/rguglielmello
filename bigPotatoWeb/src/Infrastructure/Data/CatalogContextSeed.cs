@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities;
 using Microsoft.Extensions.Logging;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Data;
 
 public class CatalogContextSeed
 {

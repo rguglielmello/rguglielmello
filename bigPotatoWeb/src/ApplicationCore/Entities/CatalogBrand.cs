@@ -1,6 +1,6 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+﻿using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Entities;
 
 public class CatalogBrand : BaseEntity, IAggregateRoot
 {

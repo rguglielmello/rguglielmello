@@ -1,11 +1,8 @@
-﻿using System.Net.Http;
-using System.Threading;
-using System.Threading.Tasks;
-using BlazorShared;
+﻿using BlazorShared;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 
-namespace Microsoft.eShopWeb.Web.HealthChecks;
+namespace Microsoft.bigPotatoWeb.Web.HealthChecks;
 
 public class ApiHealthCheck : IHealthCheck
 {

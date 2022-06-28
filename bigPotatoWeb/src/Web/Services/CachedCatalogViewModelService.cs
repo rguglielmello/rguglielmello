@@ -1,11 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.eShopWeb.Web.Extensions;
-using Microsoft.eShopWeb.Web.ViewModels;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.bigPotatoWeb.Web.Extensions;
+using Microsoft.bigPotatoWeb.Web.ViewModels;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace Microsoft.eShopWeb.Web.Services;
+namespace Microsoft.bigPotatoWeb.Web.Services;
 
 public class CachedCatalogViewModelService : ICatalogViewModelService
 {

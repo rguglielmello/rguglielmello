@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.PublicApi;
+﻿namespace Microsoft.bigPotatoWeb.PublicApi;
 
 /// <summary>
 /// Base class used by API requests

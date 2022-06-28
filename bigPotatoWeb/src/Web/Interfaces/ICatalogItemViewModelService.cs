@@ -1,7 +1,6 @@
-﻿using System.Threading.Tasks;
-using Microsoft.eShopWeb.Web.ViewModels;
+﻿using Microsoft.bigPotatoWeb.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Interfaces;
+namespace Microsoft.bigPotatoWeb.Web.Interfaces;
 
 public interface ICatalogItemViewModelService
 {

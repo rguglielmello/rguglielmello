@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Microsoft.eShopWeb;
+namespace Microsoft.bigPotatoWeb;
 
 public static class JsonExtensions
 {

@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Infrastructure.Identity;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.Infrastructure.Identity;
 
-namespace Microsoft.eShopWeb.Web.Areas.Identity.Pages.Account;
+namespace Microsoft.bigPotatoWeb.Web.Areas.Identity.Pages.Account;
 
 [AllowAnonymous]
 public class LoginModel : PageModel

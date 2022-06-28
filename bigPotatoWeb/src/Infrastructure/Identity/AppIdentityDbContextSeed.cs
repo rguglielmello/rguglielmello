@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Constants;
+using Microsoft.bigPotatoWeb.ApplicationCore.Constants;
 
-namespace Microsoft.eShopWeb.Infrastructure.Identity;
+namespace Microsoft.bigPotatoWeb.Infrastructure.Identity;
 
 public class AppIdentityDbContextSeed
 {

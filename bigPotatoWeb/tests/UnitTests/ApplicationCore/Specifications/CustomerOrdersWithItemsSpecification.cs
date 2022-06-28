@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.OrderAggregate;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications;
+namespace Microsoft.bigPotatoWeb.UnitTests.ApplicationCore.Specifications;
 
 public class CustomerOrdersWithItemsSpecification
 {
@@ -13,7 +13,7 @@ public class CustomerOrdersWithItemsSpecification
     [Fact]
     public void ReturnsOrderWithOrderedItem()
     {
-        var spec = new eShopWeb.ApplicationCore.Specifications.CustomerOrdersWithItemsSpecification(_buyerId);
+        var spec = new bigPotatoWeb.ApplicationCore.Specifications.CustomerOrdersWithItemsSpecification(_buyerId);
 
         var result = GetTestCollection()
             .AsQueryable()
@@ -28,7 +28,7 @@ public class CustomerOrdersWithItemsSpecification
     [Fact]
     public void ReturnsAllOrderWithAllOrderedItem()
     {
-        var spec = new eShopWeb.ApplicationCore.Specifications.CustomerOrdersWithItemsSpecification(_buyerId);
+        var spec = new bigPotatoWeb.ApplicationCore.Specifications.CustomerOrdersWithItemsSpecification(_buyerId);
 
         var result = GetTestCollection()
             .AsQueryable()

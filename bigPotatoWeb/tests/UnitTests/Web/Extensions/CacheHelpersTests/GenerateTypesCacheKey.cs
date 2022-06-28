@@ -1,7 +1,7 @@
-﻿using Microsoft.eShopWeb.Web.Extensions;
+﻿using Microsoft.bigPotatoWeb.Web.Extensions;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.Web.Extensions.CacheHelpersTests;
+namespace Microsoft.bigPotatoWeb.UnitTests.Web.Extensions.CacheHelpersTests;
 
 public class GenerateTypesCacheKey
 {

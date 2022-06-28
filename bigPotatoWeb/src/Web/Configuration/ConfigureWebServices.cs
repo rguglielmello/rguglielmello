@@ -1,10 +1,8 @@
 ﻿using MediatR;
-using Microsoft.eShopWeb.Web.Interfaces;
-using Microsoft.eShopWeb.Web.Services;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.bigPotatoWeb.Web.Interfaces;
+using Microsoft.bigPotatoWeb.Web.Services;
 
-namespace Microsoft.eShopWeb.Web.Configuration;
+namespace Microsoft.bigPotatoWeb.Web.Configuration;
 
 public static class ConfigureWebServices
 {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate;
 
 public class Basket : BaseEntity, IAggregateRoot
 {

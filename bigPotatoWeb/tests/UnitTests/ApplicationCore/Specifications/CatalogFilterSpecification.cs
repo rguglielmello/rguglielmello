@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications;
+namespace Microsoft.bigPotatoWeb.UnitTests.ApplicationCore.Specifications;
 
 public class CatalogFilterSpecification
 {
@@ -17,7 +17,7 @@ public class CatalogFilterSpecification
     [InlineData(2, 3, 0)]
     public void MatchesExpectedNumberOfItems(int? brandId, int? typeId, int expectedCount)
     {
-        var spec = new eShopWeb.ApplicationCore.Specifications.CatalogFilterSpecification(brandId, typeId);
+        var spec = new bigPotatoWeb.ApplicationCore.Specifications.CatalogFilterSpecification(brandId, typeId);
 
         var result = GetTestItemCollection()
             .AsQueryable()

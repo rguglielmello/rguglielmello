@@ -3,9 +3,9 @@ using System.Net;
 using System.Threading.Tasks;
 using BlazorShared.Models;
 using Microsoft.AspNetCore.Http;
-using Microsoft.eShopWeb.ApplicationCore.Exceptions;
+using Microsoft.bigPotatoWeb.ApplicationCore.Exceptions;
 
-namespace Microsoft.eShopWeb.PublicApi.Middleware;
+namespace Microsoft.bigPotatoWeb.PublicApi.Middleware;
 
 public class ExceptionMiddleware
 {

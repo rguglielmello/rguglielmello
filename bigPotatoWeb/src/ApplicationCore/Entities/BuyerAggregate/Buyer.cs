@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Ardalis.GuardClauses;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities.BuyerAggregate;
+namespace Microsoft.bigPotatoWeb.ApplicationCore.Entities.BuyerAggregate;
 
 public class Buyer : BaseEntity, IAggregateRoot
 {

@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Services;
+using Microsoft.bigPotatoWeb.ApplicationCore.Entities.BasketAggregate;
+using Microsoft.bigPotatoWeb.ApplicationCore.Interfaces;
+using Microsoft.bigPotatoWeb.ApplicationCore.Services;
 using Moq;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Services.BasketServiceTests;
+namespace Microsoft.bigPotatoWeb.UnitTests.ApplicationCore.Services.BasketServiceTests;
 
 public class DeleteBasket
 {

@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.Web.ViewModels;
+﻿namespace Microsoft.bigPotatoWeb.Web.ViewModels;
 
 public class PaginationInfoViewModel
 {

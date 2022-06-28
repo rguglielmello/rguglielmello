@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
+﻿namespace Microsoft.bigPotatoWeb.PublicApi.CatalogItemEndpoints;
 
 public class ListPagedCatalogItemRequest : BaseRequest
 {

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
+namespace Microsoft.bigPotatoWeb.Infrastructure.Data.Migrations
 {
     public partial class FixShipToAddress : Migration
     {
