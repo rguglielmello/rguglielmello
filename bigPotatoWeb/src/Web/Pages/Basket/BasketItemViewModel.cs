@@ -10,7 +10,7 @@ public class BasketItemViewModel
     public decimal UnitPrice { get; set; }
     public decimal OldUnitPrice { get; set; }
 
-    [Range(0, int.MaxValue, ErrorMessage = "Quantity must be bigger than 0")]
+    [Range(0, int.MaxValue, ErrorMessage = "A quantidade deve ser maior que 0")]
     public int Quantity { get; set; }
   
     public string? PictureUrl { get; set; }

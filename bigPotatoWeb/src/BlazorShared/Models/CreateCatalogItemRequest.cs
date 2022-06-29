@@ -8,14 +8,14 @@ public class CreateCatalogItemRequest
 
     public int CatalogBrandId { get; set; }
 
-    [Required(ErrorMessage = "The Name field is required")]
+    [Required(ErrorMessage = "O campo nome é obrigatório")]
     public string Name { get; set; } = string.Empty;
 
-    [Required(ErrorMessage = "The Description field is required")]
+    [Required(ErrorMessage = "O campo Descrição é obrigatório")]
     public string Description { get; set; } = string.Empty;
 
     // decimal(18,2)
-    [RegularExpression(@"^\d+(\.\d{0,2})*$", ErrorMessage = "The field Price must be a positive number with maximum two decimals.")]
+    [RegularExpression(@"^\d+(\.\d{0,2})*$", ErrorMessage = "O campo Preço deve ser um número positivo com no máximo duas casas decimais.")]
     [Range(0.01, 1000)]
     [DataType(DataType.Currency)]
     public decimal Price { get; set; } = 0;

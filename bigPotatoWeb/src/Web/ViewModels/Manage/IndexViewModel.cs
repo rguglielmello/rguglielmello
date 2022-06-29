@@ -13,7 +13,7 @@ public class IndexViewModel
     public string Email { get; set; }
 
     [Phone]
-    [Display(Name = "Phone number")]
+    [Display(Name = "Número de telefone")]
     public string PhoneNumber { get; set; }
 
     public string? StatusMessage { get; set; }

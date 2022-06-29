@@ -19,7 +19,7 @@
     -webkit-appearance: none;
     background-color: transparent;
     border-color: #00d9cc;
-    color: #FFFFFF;
+    color: #3F51B5;
     cursor: pointer;
     margin-right: 1rem;
     margin-top: .5rem;
@@ -42,7 +42,8 @@
 }
 
     .esh-catalog-label::before {
-        color: rgba(255, 255, 255, 0.5);
+        /*color: rgba(255, 255, 255, 0.5);*/
+        color: #3F51B5;
         content: attr(data-title);
         font-size: 0.65rem;
         margin-left: 0.5rem;

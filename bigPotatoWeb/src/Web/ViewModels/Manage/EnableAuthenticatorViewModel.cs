@@ -6,9 +6,9 @@ namespace Microsoft.bigPotatoWeb.Web.ViewModels.Manage;
 public class EnableAuthenticatorViewModel
 {
     [Required]
-    [StringLength(7, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+    [StringLength(7, ErrorMessage = "O {0} deve ter pelo menos {2} e no máximo {1} caracteres.", MinimumLength = 6)]
     [DataType(DataType.Text)]
-    [Display(Name = "Verification Code")]
+    [Display(Name = "Código de verificação")]
     public string Code { get; set; }
 
     [BindNever]
