@@ -66,7 +66,8 @@ public class BasketViewModelService : IBasketViewModelService
                 Quantity = basketItem.Quantity,
                 CatalogItemId = basketItem.CatalogItemId,
                 PictureUrl = _uriComposer.ComposePicUri(catalogItem.PictureUri),
-                ProductName = catalogItem.Name
+                ProductName = catalogItem.Name,
+                ETA = catalogItem.ETA
             };
             return basketItemViewModel;
         }).ToList();

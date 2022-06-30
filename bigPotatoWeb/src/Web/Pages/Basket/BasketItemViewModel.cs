@@ -12,6 +12,9 @@ public class BasketItemViewModel
 
     [Range(0, int.MaxValue, ErrorMessage = "A quantidade deve ser maior que 0")]
     public int Quantity { get; set; }
-  
+    
+    [Range(0, 12)]
+    public int ETA { get; set; }
+
     public string? PictureUrl { get; set; }
 }

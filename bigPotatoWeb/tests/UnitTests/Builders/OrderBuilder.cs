@@ -12,6 +12,7 @@ public class OrderBuilder
     public string TestPictureUri => "http://test.com/image.jpg";
     public decimal TestUnitPrice = 1.23m;
     public int TestUnits = 3;
+    public int TestETA = 7;
     public CatalogItemOrdered TestCatalogItemOrdered { get; }
 
     public OrderBuilder()
@@ -27,7 +28,7 @@ public class OrderBuilder
 
     public Order WithDefaultValues()
     {
-        var orderItem = new OrderItem(TestCatalogItemOrdered, TestUnitPrice, TestUnits);
+        var orderItem = new OrderItem(TestCatalogItemOrdered, TestUnitPrice, TestUnits, TestETA);
         var itemList = new List<OrderItem>() { orderItem };
         _order = new Order(TestBuyerId, new AddressBuilder().WithDefaultValues(), itemList);
         return _order;

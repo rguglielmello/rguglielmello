@@ -8,6 +8,7 @@ namespace Microsoft.bigPotatoWeb.UnitTests.ApplicationCore.Entities.OrderTests;
 public class OrderTotal
 {
     private decimal _testUnitPrice = 42m;
+    private int _testETA = 7;
 
     [Fact]
     public void IsZeroForNewOrder()
@@ -23,7 +24,7 @@ public class OrderTotal
         var builder = new OrderBuilder();
         var items = new List<OrderItem>
             {
-                new OrderItem(builder.TestCatalogItemOrdered, _testUnitPrice, 1)
+                new OrderItem(builder.TestCatalogItemOrdered, _testUnitPrice, 1, _testETA)
             };
         var order = new OrderBuilder().WithItems(items);
         Assert.Equal(_testUnitPrice, order.Total());
@@ -35,6 +36,6 @@ public class OrderTotal
         var builder = new OrderBuilder();
         var order = builder.WithDefaultValues();
 
-        Assert.Equal(builder.TestUnitPrice * builder.TestUnits, order.Total());
+        Assert.Equal(builder.TestUnitPrice * builder.TestUnits, order.Total(), order.TotalETA());
     }
 }

@@ -17,7 +17,7 @@ public class GetOrderDetails
 
     public GetOrderDetails()
     {
-        var item = new OrderItem(new CatalogItemOrdered(1, "ProductName", "URI"), 10.00m, 10);
+        var item = new OrderItem(new CatalogItemOrdered(1, "ProductName", "URI"), 10.00m, 10, 7);
         var address = new Address(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>());
         Order order = new Order("buyerId", address, new List<OrderItem> { item });
 

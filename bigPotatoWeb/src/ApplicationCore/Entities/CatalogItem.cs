@@ -9,6 +9,7 @@ public class CatalogItem : BaseEntity, IAggregateRoot
     public string Name { get; private set; }
     public string Description { get; private set; }
     public decimal Price { get; private set; }
+    public int ETA { get; private set; }
     public string PictureUri { get; private set; }
     public int CatalogTypeId { get; private set; }
     public CatalogType CatalogType { get; private set; }
@@ -20,7 +21,8 @@ public class CatalogItem : BaseEntity, IAggregateRoot
         string description,
         string name,
         decimal price,
-        string pictureUri)
+        string pictureUri,
+        int eTA)
     {
         CatalogTypeId = catalogTypeId;
         CatalogBrandId = catalogBrandId;
@@ -28,17 +30,20 @@ public class CatalogItem : BaseEntity, IAggregateRoot
         Name = name;
         Price = price;
         PictureUri = pictureUri;
+        ETA = eTA;
     }
 
-    public void UpdateDetails(string name, string description, decimal price)
+    public void UpdateDetails(string name, string description, decimal price, int eta)
     {
         Guard.Against.NullOrEmpty(name, nameof(name));
         Guard.Against.NullOrEmpty(description, nameof(description));
         Guard.Against.NegativeOrZero(price, nameof(price));
+        Guard.Against.NegativeOrZero(eta, nameof(eta));
 
         Name = name;
         Description = description;
         Price = price;
+        ETA = eta;
     }
 
     public void UpdateBrand(int catalogBrandId)

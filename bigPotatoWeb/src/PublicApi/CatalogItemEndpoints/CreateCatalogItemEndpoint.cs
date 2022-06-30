@@ -49,7 +49,7 @@ public class CreateCatalogItemEndpoint : IEndpoint<IResult, CreateCatalogItemReq
             throw new DuplicateException($"A catalogItem with name {request.Name} already exists");
         }
 
-        var newItem = new CatalogItem(request.CatalogTypeId, request.CatalogBrandId, request.Description, request.Name, request.Price, request.PictureUri);
+        var newItem = new CatalogItem(request.CatalogTypeId, request.CatalogBrandId, request.Description, request.Name, request.Price, request.PictureUri, request.ETA);
         newItem = await _itemRepository.AddAsync(newItem);
 
         if (newItem.Id != 0)

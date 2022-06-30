@@ -16,11 +16,12 @@
         <form asp-page="Checkout" method="post">
             <article class="esh-basket-titles row">
                 <br />
-                <section class="esh-basket-title col-xs-3">Produtos</section>
-                <section class="esh-basket-title col-xs-3 hidden-lg-down"></section>
+                <section class="esh-basket-title col-xs-2">Produtos</section>
+                <section class="esh-basket-title col-xs-2 hidden-lg-down"></section>
                 <section class="esh-basket-title col-xs-2">Preço</section>
                 <section class="esh-basket-title col-xs-2">Quantidade</section>
                 <section class="esh-basket-title col-xs-2">Custo</section>
+				<section class="esh-basket-title col-xs-2">Tempo Previsto</section>
             </article>
             <div class="esh-catalog-items row">
                 <div asp-validation-summary="All" class="text-danger"></div>
@@ -29,17 +30,18 @@
                     var item = Model.BasketModel.Items[i];
                     <article class="esh-basket-items row">
                         <div>
-                            <section class="esh-basket-item esh-basket-item--middle col-lg-3 hidden-lg-down">
+                            <section class="esh-basket-item esh-basket-item--middle col-lg-2 hidden-lg-down">
                                 <img class="esh-basket-image" src="@item.PictureUrl" />
                             </section>
-                            <section class="esh-basket-item esh-basket-item--middle col-xs-3">@item.ProductName</section>
-                            <section class="esh-basket-item esh-basket-item--middle col-xs-2">$ @item.UnitPrice.ToString("N2")</section>
+                            <section class="esh-basket-item esh-basket-item--middle col-xs-2">@item.ProductName</section>
+                            <section class="esh-basket-item esh-basket-item--middle col-xs-2">R$ @item.UnitPrice.ToString("N2")</section>
                             <section class="esh-basket-item esh-basket-item--middle col-xs-2">
                                 <input type="hidden" name="@("Items[" + i + "].Id")" value="@item.Id" />
                                 <input type="hidden" name="@("Items[" + i + "].Quantity")" value="@item.Quantity" />
                                 @item.Quantity
                             </section>
-                            <section class="esh-basket-item esh-basket-item--middle esh-basket-item--mark col-xs-2">$ @Math.Round(item.Quantity * item.UnitPrice, 2).ToString("N2")</section>
+                            <section class="esh-basket-item esh-basket-item--middle esh-basket-item--mark col-xs-2">R$ @Math.Round(item.Quantity * item.UnitPrice, 2).ToString("N2")</section>
+							<section class="esh-basket-item esh-basket-item--middle esh-basket-item--mark col-xs-2">@item.ETA.ToString() min</section>
                         </div>
                         <div class="row">
 
@@ -49,13 +51,15 @@
 
                 <div class="container">
                     <article class="esh-basket-titles esh-basket-titles--clean row">
-                        <section class="esh-basket-title col-xs-10"></section>
+                        <section class="esh-basket-title col-xs-8"></section>
                         <section class="esh-basket-title col-xs-2">Total</section>
+						<section class="esh-basket-title col-xs-2">Total Tempo Est.</section>
                     </article>
 
                     <article class="esh-basket-items row">
-                        <section class="esh-basket-item col-xs-10"></section>
-                        <section class="esh-basket-item esh-basket-item--mark col-xs-2">$ @Model.BasketModel.Total().ToString("N2")</section>
+                        <section class="esh-basket-item col-xs-8"></section>
+                        <section class="esh-basket-item esh-basket-item--mark col-xs-2">R$ @Model.BasketModel.Total().ToString("N2")</section>
+						<section class="esh-basket-item esh-basket-item--mark col-xs-2">@Model.BasketModel.TotalETA().ToString() min</section>
                     </article>
 
                     <article class="esh-basket-items row">

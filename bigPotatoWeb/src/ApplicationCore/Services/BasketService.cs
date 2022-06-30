@@ -19,7 +19,7 @@ public class BasketService : IBasketService
         _logger = logger;
     }
 
-    public async Task<Basket> AddItemToBasket(string username, int catalogItemId, decimal price, int quantity = 1)
+    public async Task<Basket> AddItemToBasket(string username, int catalogItemId, decimal price, int quantity = 1, int eta = 6)
     {
         var basketSpec = new BasketWithItemsSpecification(username);
         var basket = await _basketRepository.GetBySpecAsync(basketSpec);
@@ -30,7 +30,7 @@ public class BasketService : IBasketService
             await _basketRepository.AddAsync(basket);
         }
 
-        basket.AddItem(catalogItemId, price, quantity);
+        basket.AddItem(catalogItemId, price, quantity, eta);
 
         await _basketRepository.UpdateAsync(basket);
         return basket;

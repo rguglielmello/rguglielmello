@@ -18,11 +18,11 @@ public class Basket : BaseEntity, IAggregateRoot
         BuyerId = buyerId;
     }
 
-    public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1)
+    public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1, int eta = 6)
     {
         if (!Items.Any(i => i.CatalogItemId == catalogItemId))
         {
-            _items.Add(new BasketItem(catalogItemId, quantity, unitPrice));
+            _items.Add(new BasketItem(catalogItemId, quantity, unitPrice, eta));
             return;
         }
         var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);

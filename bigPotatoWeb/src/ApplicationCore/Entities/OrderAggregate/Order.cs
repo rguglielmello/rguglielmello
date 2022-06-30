@@ -48,4 +48,14 @@ public class Order : BaseEntity, IAggregateRoot
         }
         return total;
     }
+
+    public int TotalETA()
+    {
+        int totalETA = 0;
+        foreach (var item in _orderItems)
+        {
+            totalETA += item.ETA * item.Units;
+        }
+        return totalETA;
+    }
 }

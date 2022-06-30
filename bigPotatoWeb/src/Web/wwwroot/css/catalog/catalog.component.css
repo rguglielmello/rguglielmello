@@ -144,5 +144,5 @@
 }
 
     .esh-catalog-price::before {
-        content: '$';
+        content: 'R$';
     }

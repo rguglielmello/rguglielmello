@@ -4,6 +4,7 @@ public class OrderItem : BaseEntity
 {
     public CatalogItemOrdered ItemOrdered { get; private set; }
     public decimal UnitPrice { get; private set; }
+    public int ETA { get; private set; }
     public int Units { get; private set; }
 
     private OrderItem()
@@ -11,10 +12,11 @@ public class OrderItem : BaseEntity
         // required by EF
     }
 
-    public OrderItem(CatalogItemOrdered itemOrdered, decimal unitPrice, int units)
+    public OrderItem(CatalogItemOrdered itemOrdered, decimal unitPrice, int units, int eTA)
     {
         ItemOrdered = itemOrdered;
         UnitPrice = unitPrice;
         Units = units;
+        ETA = eTA;
     }
 }
